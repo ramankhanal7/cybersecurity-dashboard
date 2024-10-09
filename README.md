@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Cybersecurity Dashboard App 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an ongoing project focused on building a **Cybersecurity Dashboard** using **React.js** and **Tailwind CSS** for frontend development. The application integrates **Firebase (Firestore & Auth)** for authentication and database services, and **AWS Lambda** and **AWS S3** for password backup functionality. 
 
-## Available Scripts
+## 🚧 Project Status: In Development
 
-In the project directory, you can run:
+Currently, the **main dashboard page** is complete, and the remaining features are actively under development. Future features include a **Password Generator**, **User Authentication**, **Profile Manipulation**, and **Settings**. The dashboard will also provide insights into password health, such as detecting breached, weak, reused, and expired passwords.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Features (Completed & Upcoming)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Completed:
+- **Dashboard Layout**: A responsive and dynamic user interface for the cybersecurity dashboard, built with React.js and styled using Tailwind CSS.
+- **Firebase Integration**: Firebase has been integrated into the project, with Firestore planned for storing user-generated passwords, and Firebase Authentication to manage users.
 
-### `npm test`
+### Upcoming Features:
+- **Password Generator**: Users will be able to generate strong, random passwords directly from the dashboard.
+- **Password Health Analysis**: 
+  - **Breached Passwords**: Detection of passwords found in data breaches.
+  - **Weak Passwords**: Identifying passwords that are easy to crack or don't meet complexity requirements.
+  - **Reused Passwords**: Alerting users to passwords that are reused across different accounts.
+  - **Expired Passwords**: Notifying users about passwords that haven't been rotated or changed in a while.
+- **User Authentication**: Full Firebase Authentication integration (with email and social logins) is planned.
+- **Profile Manipulation**: Users will be able to edit their profiles, manage passwords, and customize their settings.
+- **Password Backup to AWS S3**: Users will be able to back up their generated passwords to AWS S3, with secure password encryption using AWS Lambda.
+- **Settings Page**: Options for password complexity, security preferences, and notification settings.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**:
+  - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces.
+  - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for styling the app.
+  
+- **Backend & Cloud Services**:
+  - **Firebase**:
+    - **Firestore**: To store user data and generated passwords.
+    - **Authentication**: To manage user accounts and secure access.
+  - **AWS**:
+    - **AWS Lambda**: For running serverless functions to encrypt and securely store password backups.
+    - **AWS S3**: To store user password backups in the cloud.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📋 Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Follow these steps to run the project locally on your machine:
 
-### `npm run eject`
+### Prerequisites
+- **Node.js**: Ensure that Node.js is installed on your system.
+- **Firebase Account**: You need a Firebase account and project set up.
+- **AWS Account**: Set up an AWS account for Lambda and S3 integrations.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation Steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ramankhanal7/cybersecurity-dashboard.git
+   cd cybersecurity-dashboard
+2. **Install Dependencies**:
+   ```
+   npm install
+4. **Setup Firebase**:
+   Create a .env file in the root of the project and add the following environment variables with your Firebase credentials:
+   ```
+   REACT_APP_FIREBASE_API_KEY=your-api-key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+   REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
+   REACT_APP_FIREBASE_APP_ID=your-app-id
+6. **Run Development Server**:
+   ```
+   npm start
+8. **View Live App**:
+   Open ```http://localhost:3000``` in your browser to view the app. If port is taken by another service on your device, edit source code to start server on different port.
