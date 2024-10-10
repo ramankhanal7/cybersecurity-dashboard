@@ -1,4 +1,4 @@
-# Cybersecurity Dashboard App 🚀
+# Cybersecurity Dashboard App 
 
 This is an ongoing project focused on building a **Cybersecurity Dashboard** using **React.js** and **Tailwind CSS** for frontend development. The application integrates **Firebase (Firestore & Auth)** for authentication and database services, and **AWS Lambda** and **AWS S3** for password backup functionality. 
 
@@ -8,7 +8,7 @@ Currently, the **main dashboard page** is complete, and the remaining features a
 
 ---
 
-## 📌 Features (Completed & Upcoming)
+##  Features (Completed & Upcoming)
 
 ### Completed:
 - **Dashboard Layout**: A responsive and dynamic user interface for the cybersecurity dashboard, built with React.js and styled using Tailwind CSS.
